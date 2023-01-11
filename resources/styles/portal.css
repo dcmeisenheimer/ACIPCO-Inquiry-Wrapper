@@ -195,9 +195,47 @@ footer {
     color: white;
 }
 
+#carouselExampleControls {
+    display: none;
+}
 
 /* Mobile/Tablets */
+@media (max-width: 767px) {
+    aside {
+        display: none;
+        height: 0;
+        padding: 0;
+        width: 0;
+        margin: 0;
+    }
+    main {
+        margin-top: -4.7rem;
+    }
+    
+}
 @media (max-width: 1279px) {
+    .desktop-card {
+        display: none;
+    }
+    #carouselExampleControls {
+        display: block;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        filter: invert(100%);
+    }
+    
+    .carousel-control-prev {
+        padding: .1rem;
+        width: 1.5rem;
+    }
+    .carousel-control-next {
+        padding: .1rem;
+        width: 1.5rem;
+    }
+    .carousel-indicators button{
+        filter: invert(100%);
+        padding-top: .5rem;
+    }
     /* Relocate grid to two column for nav and header */
     .container-fluid {
         grid-template-columns: 1fr 1fr;
@@ -462,3 +500,9 @@ footer {
         font-size: .8rem;
     }
 }
+
+
+
+
+
+
