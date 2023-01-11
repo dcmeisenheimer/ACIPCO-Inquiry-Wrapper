@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/6dc5daef09.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./resources/styles/portal.css">
+    <title>Portal Grid</title>
+</head>
+<body>
+    <!-- Container for webpage -->
+    <div class="container-fluid">
+        <!-- Header Logo Section -->
+        <header>
+            <img src="./resources/images/AmericanLogo.png" alt="AmericanLogo" srcset="">
+        </header>
+        <!-- Nav Dropdown section -->
+        <nav>
+            <div class="btn-group">
+                <!-- Main Display Button -->
+                <button type="button" class="btn btn-primary">Links</button>
+                <!-- Split Button for dropdown -->
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <!-- Drop down items -->
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="fa-solid fa-flag-usa"></i> btwinengines@acipco.com</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> Profiles</a>
+                  <a class="dropdown-item" href="#"><i class="fa-solid fa-magnifying-glass"></i> Existing Inquiry</a>
+                  <a class="dropdown-item" href="#"><i class="fa-solid fa-house"></i> American Home</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Inquiry Id = 23494 on 1/06/2023 17:35 PM</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Form progress section -->
+        <aside>
+            <div class="form-progress">
+                <div class="row justify-content-center progress-row">
+                    <div class="col-md-2 progress-info"><h2>Job Information</h2></div>
+                    <div class="col-md-1 progress-arrow one"><i class="fa-solid fa-caret-right"></i></div>
+                    <div class="col-md-2 progress-details"><h2>Job Details</h2></div>
+                    <div class="col-md-1 progress-arrow two"><i class="fa-solid fa-caret-right"></i></div>
+                    <div class="col-md-2 progress-inquiry"><h2>Submit Inquiry</h2></div>
+                </div>
+            </div>
+        </aside>
+        <!-- Main section -->
+        <main>
+            <!-- Job Information Card -->
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Information</h5>
+                            <form>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <label for="formGroupExampleInput">Project Name:</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-3">
+                                        <label for="inputState">State:</label>
+                                        <select id="inputState" class="form-control" required>
+                                          <option selected>...</option>
+                                          <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                      <label for="inputCounty">County:</label>
+                                      <select id="inputCounty" class="form-control">
+                                        <option selected>...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                      <label for="inputCity">City:</label>
+                                      <select id="inputCity" class="form-control">
+                                        <option selected>...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputCity">Enter City if not listed:</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail1">Requester:</label>
+                                        <input type="email" class="form-control" id="inputEmail1">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail2">CC:</label>
+                                        <input type="email" class="form-control" id="inputEmail2">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-3 bid-type">
+                                        <label for="bidType">Bid Type:</label>
+                                        <select id="bidType" class="form-control">
+                                            <option selected>...</option>
+                                            <option>Public</option>
+                                            <option>Private</option>
+                                            <option>Municipal District</option>
+                                            <option>Budget</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="formGroupExampleInput">Project Type:</label>
+                                        <div class="segmented-control">
+                                            <input type="radio" name="type-selection" id="type-line" value="line" />
+                                            <label for="type-line">Line</label>
+                                            <input type="radio" name="type-selection" id="type-plant" value="plant" />
+                                            <label for="type-plant">Plant</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputCity">Bid Date:</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="form-group col-md-2 bid-time">
+                                        <label for="inputCity">Bid Time:</label>
+                                        <input type="text" class="form-control bid-time-form" id="inputZip">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="formGroupExampleInput">AM/PM:</label>
+                                        <div class="segmented-control">
+                                            <input type="radio" name="time-selection" id="type-am" value="line" />
+                                            <label for="type-am">AM</label>
+                                            <input type="radio" name="time-selection" id="type-pm" value="plant" />
+                                            <label for="type-pm">PM</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-3">
+                                        <label for="inputCity">Owner:</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputCity">Engineer:</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="exampleFormControlTextarea1">Job Notes:</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                      </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="exampleFormControlFile1" style="width: 100%;">Attach a File:</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="exampleFormControlFile1">Number of Contractors to Quote (Max 20):</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Job Details card -->
+                <div class="col job-detail-card" >
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Details</h5>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#inputQuantity">Pick Item</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Frequently Quoted Items</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Item Search</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Import Items Prev. Inq</a>
+                                </li>
+                            </ul>
+                            <br/>
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="inputCity">Quantity:</label>
+                                    <input type="text" class="form-control" id="inputQuantity" placeholder="Feet"> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="inputState">Type:</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>...</option>
+                                      <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputState">Size:</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>...</option>
+                                      <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label for="inputCounty">Joint:</label>
+                                  <select id="inputCounty" class="form-control">
+                                    <option selected>...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputCity">Class:</label>
+                                  <select id="inputCity" class="form-control">
+                                    <option selected>...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputCity">Lining/Coating:</label>
+                                    <select id="inputCity" class="form-control">
+                                      <option selected>...</option>
+                                      <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputState">Item Description:</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>...</option>
+                                      <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Laying Length:</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>...</option>
+                                      <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputState">Add Amarillo Fast-Grip SBR Gskts</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">VBIO Polywrap Rolls</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+                            <br class="btn-padding"/>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-primary">Add Item</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <!-- Submit Inquery card -->
+            <div class="row submit-inquery-card">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Submit Inquiry</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Seq</th>
+                                        <th scope="col">Qty.</th>
+                                        <th scope="col">UOM</th>
+                                        <th scope="col">Item Name</th>
+                                        <th scope="col">Total Weight: 4,090lbs</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Seq">+</td>
+                                        <td data-label="Qty.">50</td>
+                                        <td data-label="UOM">FT</td>
+                                        <td data-label="Item Name">12" FR FRE PIPE CL-50 0.31" 19'10", 4-R-2-R1 (CMNT/ZINC)</td>
+                                        <td data-label="Weight">1,030 lbs.</td>
+                                        <td data-label="Action">
+                                            <button type="button" class="btn btn-secondary btn-sm">Edit Qty</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Seq">+</td>
+                                        <td data-label="Qty.">50</td>
+                                        <td data-label="UOM">FT</td>
+                                        <td data-label="Item Name">12" FR FRE PIPE CL-50 0.31" 19'10", 4-R-2-R1 (CMNT/ZINC)</td>
+                                        <td data-label="Weight">1,030 lbs.</td>
+                                        <td data-label="Action">
+                                            <button type="button" class="btn btn-secondary btn-sm">Edit Qty</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Seq">+</td>
+                                        <td data-label="Qty.">50</td>
+                                        <td data-label="UOM">FT</td>
+                                        <td data-label="Item Name">12" FR FRE PIPE CL-50 0.31" 19'10", 4-R-2-R1 (CMNT/ZINC)</td>
+                                        <td data-label="Weight">1,030 lbs.</td>
+                                        <td data-label="Action">
+                                            <button type="button" class="btn btn-secondary btn-sm">Edit Qty</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                        </td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-primary">Submit Inquery</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer Section -->
+        <footer>
+            <div class="text-center">
+                <p>© 2023 AMERICAN (AMERICAN Cast Iron Pipe Company). All rights reserved.
+                    Legal Notice and Disclaimer /Transparency in Coverage Act</p>
+            </div>
+        </footer>
+    </div>
+
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Custom JS -->
+    <script src="./resources/scripts/index.js"></script>
+</body>
+</html>
