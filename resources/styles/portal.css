@@ -323,6 +323,11 @@ input[type="file"]:hover {
     .form-group {
         width: 90%;
     }
+    .submit-inquery-card {
+        padding: .75rem;
+        padding-top: .2rem;
+
+    }
     /* Font sizing for misc. */
     a, td, th {
         font-size: 1rem;
