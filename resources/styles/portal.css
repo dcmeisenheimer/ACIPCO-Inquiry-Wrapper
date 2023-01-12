@@ -326,7 +326,7 @@ input[type="file"]:hover {
     .submit-inquery-card {
         padding: .75rem;
         padding-top: .2rem;
-
+        /* for github */
     }
     /* Font sizing for misc. */
     a, td, th {
