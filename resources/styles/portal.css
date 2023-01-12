@@ -70,10 +70,22 @@ footer {
 
 /* Dropdown menu for nav bar */
 .dropdown-menu {
-    /* moved item left to fix misalignment */
-    margin-right: .7rem;
+    box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+}
+.dropdown-menu i {
+    padding-right: 10px;
+    color: #086375;
+}
+.dropdown-menu a {
+    color: #000;
 }
 
+p {
+    padding: 0;
+}
+#quote-disclaimer p {
+    font-weight: bold;
+}
 /* Button group for nav bar */
 .btn-group {
     /* Fixed the centering issue */
@@ -224,6 +236,7 @@ input[type="file"]:hover {
 
 /* Mobile/Tablets */
 @media (max-width: 767px) {
+    
     aside {
         display: none;
         height: 0;
@@ -294,6 +307,9 @@ input[type="file"]:hover {
     header {
         padding: 0rem;
     }
+    label {
+        font-size: .9rem;
+    }
     header img {
         max-width: 240px;
         max-height: 240px;
@@ -319,6 +335,9 @@ input[type="file"]:hover {
     .card-body {
         font-size: 1rem;
     }
+    p {
+        font-size: .9rem;
+    }
     /* Forms on entire page */
     .form-group {
         width: 90%;
@@ -336,14 +355,7 @@ input[type="file"]:hover {
     .row {
         justify-content: center;
     }
-    /* Hiding cards for later */
-    /* .job-detail-card {
-        display: none;
-    } */
-    /* Hiding card for later */
-    /* .submit-inquery-card {
-        display: none;
-    } */
+   
     .btn-group {
         /* Fixed the centering issue */
         padding-top: .8rem;
@@ -385,7 +397,7 @@ input[type="file"]:hover {
       table tr {
         background-color: #f8f8f8;
         border: 1px solid #ddd;
-        padding: .35em;
+        padding: .15em;
       }
       
       table th,
