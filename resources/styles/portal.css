@@ -101,7 +101,16 @@ footer {
 }
 
 /* All primary button background color change */
+
 .btn-primary{
+    background-color: #086375;
+    border-color: #086375;
+}
+.btn-primary:hover{
+    background-color: #086375;
+    border-color: #086375;
+}
+.btn-primary:focus {
     background-color: #086375;
     border-color: #086375;
 }
@@ -197,6 +206,20 @@ footer {
 
 #carouselExampleControls {
     display: none;
+}
+
+
+input[type="file"] {
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #B9B9B9;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+input[type="file"]:hover {
+    border-color: #0275d8;
 }
 
 /* Mobile/Tablets */
